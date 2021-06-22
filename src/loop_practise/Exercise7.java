@@ -1,4 +1,5 @@
 package loop_practise;
+
 import java.util.Scanner;
 
 public class Exercise7 {
@@ -15,26 +16,21 @@ public class Exercise7 {
 		boolean flag = true;
 		int digit1 = input % 10;
 		input = input / 10;
-		while(input > 0 ) {
-			if(digit1 <= input % 10 ) {
+		while (input > 0) {
+			if (digit1 <= input % 10) {
 				flag = false;
 				break;
 			}
 			digit1 = input % 10;
 			input = input / 10;
-			
-			
+
 		}
-		if(flag)
+		if (flag)
 			System.out.println("Number is increasing number");
-		else  
+		else
 			System.out.println("Number is not increasing number");
-		
-		
+
 	}
-	
-	
-	
 
 }
 // main
